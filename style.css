@@ -1,3 +1,4 @@
+
 /* =========================
    RESET
 ========================= */
@@ -30,7 +31,6 @@ body {
     left: 0;
 
     width: 100%;
-
     height: 76px;
 
     display: flex;
@@ -90,6 +90,8 @@ nav a:hover {
 /* NAV BUTTON */
 
 .nav-button {
+    display: inline-block;
+
     border: none;
 
     background: #8b5cf6;
@@ -102,6 +104,8 @@ nav a:hover {
     font-weight: 600;
 
     cursor: pointer;
+
+    text-decoration: none;
 
     transition: 0.25s;
 }
@@ -134,7 +138,6 @@ nav a:hover {
             transparent 40%
         );
 }
-
 
 .hero-content {
     max-width: 850px;
@@ -194,7 +197,82 @@ nav a:hover {
 }
 
 
-/* BUTTONS */
+/* =========================
+   OFFER BOX
+========================= */
+
+.offer-box {
+    max-width: 520px;
+
+    margin: 32px auto 0;
+
+    padding: 25px 28px;
+
+    border: 1px solid #2c2547;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(139, 92, 246, 0.10),
+            rgba(9, 12, 20, 0.95)
+        );
+
+    box-shadow:
+        0 15px 45px rgba(0, 0, 0, 0.25);
+}
+
+.offer-label {
+    color: #a78bfa;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+.offer-box h2 {
+    font-size: 28px;
+
+    margin-bottom: 7px;
+}
+
+.offer-box p {
+    font-size: 14px;
+
+    color: #858b9b;
+
+    max-width: 100%;
+}
+
+.coupon {
+    display: inline-block;
+
+    margin-top: 14px;
+
+    padding: 7px 13px;
+
+    border-radius: 7px;
+
+    background: rgba(139, 92, 246, 0.10);
+
+    border: 1px solid #34295a;
+
+    color: #aeb4c4;
+
+    font-size: 13px;
+}
+
+.coupon strong {
+    color: white;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
 
 .hero-buttons {
     margin-top: 35px;
@@ -206,9 +284,10 @@ nav a:hover {
     gap: 15px;
 }
 
-
 .primary-button,
 .secondary-button {
+    display: inline-block;
+
     padding: 14px 25px;
 
     border-radius: 8px;
@@ -220,6 +299,8 @@ nav a:hover {
     font-size: 14px;
 
     transition: 0.25s;
+
+    text-decoration: none;
 }
 
 
@@ -270,7 +351,6 @@ nav a:hover {
     padding: 120px 7%;
 }
 
-
 .section-title {
     max-width: 700px;
 
@@ -279,7 +359,6 @@ nav a:hover {
     text-align: center;
 }
 
-
 .section-title > span {
     color: #a78bfa;
 
@@ -287,7 +366,6 @@ nav a:hover {
 
     letter-spacing: 2px;
 }
-
 
 .section-title h2 {
     font-size: clamp(32px, 5vw, 55px);
@@ -298,7 +376,6 @@ nav a:hover {
 
     margin: 15px 0;
 }
-
 
 .section-title p {
     color: #858b9b;
@@ -324,7 +401,6 @@ nav a:hover {
     gap: 20px;
 }
 
-
 .card {
     padding: 35px;
 
@@ -339,13 +415,11 @@ nav a:hover {
     transition: 0.3s;
 }
 
-
 .card:hover {
     border-color: #42356b;
 
     transform: translateY(-5px);
 }
-
 
 .card-number {
     color: #a78bfa;
@@ -355,13 +429,11 @@ nav a:hover {
     margin-bottom: 35px;
 }
 
-
 .card h3 {
     font-size: 21px;
 
     margin-bottom: 12px;
 }
-
 
 .card p {
     color: #7f8698;
@@ -380,13 +452,11 @@ nav a:hover {
     background: #070910;
 }
 
-
 .video-container {
     max-width: 900px;
 
     margin: 55px auto 0;
 }
-
 
 .video-placeholder {
     height: 480px;
@@ -412,7 +482,6 @@ nav a:hover {
             transparent 60%
         );
 }
-
 
 .play-icon {
     width: 75px;
@@ -440,18 +509,15 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-
 .play-icon:hover {
     transform: scale(1.08);
 
     background: #9f78ff;
 }
 
-
 .video-placeholder h3 {
     font-size: 20px;
 }
-
 
 .video-placeholder p {
     color: #777e91;
@@ -479,7 +545,6 @@ nav a:hover {
         );
 }
 
-
 .cta h2 {
     font-size: clamp(35px, 5vw, 60px);
 
@@ -487,7 +552,6 @@ nav a:hover {
 
     margin-bottom: 15px;
 }
-
 
 .cta p {
     color: #858b9b;
@@ -504,6 +568,7 @@ nav a:hover {
 
 .support {
     padding-top: 80px;
+
     padding-bottom: 120px;
 }
 
@@ -520,18 +585,15 @@ footer {
     text-align: center;
 }
 
-
 .footer-logo {
     margin-bottom: 8px;
 }
-
 
 footer p {
     color: #666d7e;
 
     font-size: 13px;
 }
-
 
 .footer-line {
     width: 100%;
@@ -542,7 +604,6 @@ footer p {
 
     margin: 30px 0;
 }
-
 
 .copyright {
     font-size: 11px;
@@ -573,8 +634,11 @@ footer p {
         align-items: center;
     }
 
+    .hero-buttons a,
     .hero-buttons button {
         width: 220px;
+
+        text-align: center;
     }
 
     .cards {
@@ -587,5 +651,13 @@ footer p {
 
     .nav-button {
         padding: 9px 14px;
+    }
+
+    .offer-box {
+        padding: 22px 18px;
+    }
+
+    .offer-box h2 {
+        font-size: 24px;
     }
 }
