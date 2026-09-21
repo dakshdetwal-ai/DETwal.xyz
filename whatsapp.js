@@ -1,36 +1,19 @@
 // ======================================
-// DETwal WhatsApp Configuration
+// DETwal Telegram Configuration
 // ======================================
 
-
-// PUT YOUR WHATSAPP NUMBER HERE
-
-const WHATSAPP_NUMBER = "6375064184";
-
-
-// Message that will automatically appear
-// when someone clicks Get Started.
-
-const WHATSAPP_MESSAGE =
-    "Hello DETwal! I want to know more about DETwal.";
+const TELEGRAM_BOT_URL =
+    "https://t.me/detwalhelpbot";
 
 
 // ======================================
-// OPEN WHATSAPP
+// OPEN TELEGRAM
 // ======================================
 
-function openWhatsApp() {
-
-    const encodedMessage =
-        encodeURIComponent(WHATSAPP_MESSAGE);
-
-
-    const whatsappURL =
-        `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
-
+function openTelegram() {
 
     window.open(
-        whatsappURL,
+        TELEGRAM_BOT_URL,
         "_blank"
     );
 
