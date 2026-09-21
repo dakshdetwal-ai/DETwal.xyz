@@ -5,7 +5,7 @@
 
 // PUT YOUR WHATSAPP NUMBER HERE
 
-const WHATSAPP_NUMBER = "916375064184";
+const WHATSAPP_NUMBER = "6375064184";
 
 
 // Message that will automatically appear
